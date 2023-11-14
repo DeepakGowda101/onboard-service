@@ -1,4 +1,4 @@
-package com.uniqpay.onboardservice;
+package com.uniqpay.onboardservice.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +14,7 @@ import java.util.Map;
 @RestController 
 @RequestMapping("/onboard")
 public class ClientOnboard {
-    @PostMapping()
+    @GetMapping("/status")
     public ResponseEntity<String> getOnboardClientsDetails(){
         Map m1=new HashMap<>();
         m1.put("name","Deepak");
